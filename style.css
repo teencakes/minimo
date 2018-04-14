@@ -1,0 +1,312 @@
+/* dobrą praktyką jest po każdym tagu, czy nazwie klasy dawać spację, czyli np
+
+element {
+  ...
+}
+
+a nie:
+
+element{
+
+}
+
+*/
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+/*=============HEADER===================*/
+.header{
+  /* border: 1px solid black; */
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  /* marginesy zapisywałyśmy w skróconych wersjach, czyli:
+  margin: 0 auto; - gdzie zero oznacza jednocześnie margines górny i dolny, a "auto" odnosi się i do lewego i do prawego */
+}
+
+.navbar{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* paddingi tak samo można w skrócie zapisać, jak marginesy */
+}
+
+.logo{
+  /* border: 1px solid red; */
+}
+
+.menu{
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.menu-item{
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  color: #818181;
+  font-size: 14px;
+}
+/* tutaj nie było odstępu, a też dobrą praktyką jest po każdym bloczku kodu dawać linie odstępu */
+
+.menu-link{
+color: #818181;
+}
+.menu-link:hover{
+  color: black;
+}
+
+.img{
+  width: 100%
+}
+
+.header-content{
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading{
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  color: #202020;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text{
+  font-family: 'Raleway';
+  color: #818181;
+  line-height: 1.8;
+}
+
+.menu-button{
+  /*border: 2px solid black;*/
+  position: relative;
+  display: none;
+  width: 30px;
+
+}
+.menu-button-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: black;
+
+}
+.menu-button-item:nth-child(2) {
+  top: 8px;
+}
+
+/*================ARTICLES===============*/
+.articles{
+  /* border: 1px solid black; */
+  max-width: 1480px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article{
+  width: 46%;
+  /* border: 1px solid red; */
+  margin-bottom: 70px;
+}
+
+.article-tag{
+  color: #818181;
+  font-family: "Raleway";
+  text-transform: uppercase;
+}
+.article-link{
+  font-family: 'Playfair Display';
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+.article-link:after{
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 1px;
+  background: black;
+  left: 0;
+  bottom: -4px;
+  transition: 0.5s;
+}
+.article-link:hover:after{
+  width: 100%;
+}
+
+/*==========NEWSLETTER=============*/
+.newsletter{
+  height: 400px;
+  background-color: #e2e2e2;
+  margin-bottom: 70px;
+
+}
+.newsletter-heading{
+  /*border: 1px solid black;*/
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 130px;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.form{
+  /* border: 1px solid black; */
+  width: 700px;
+  margin: 50px auto;
+  font-family: 'Playfair Display';
+  color: grey;
+  text-align: center;
+}
+
+.form-group{
+  border-bottom: 2px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input{
+  background: none;
+  border: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+.load-more{
+  border: 1px solid black;
+  display: block;
+  max-width: 150px;
+  padding: 15px 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.load-more:hover{
+  color:white;
+  background: black;
+}
+
+/*-------- FOOTER --------*/
+.midfooter{
+  max-width: 1480px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer{
+  background: #e2e2e2;
+  height: 120px;
+}
+
+.footer-menu{
+  padding: 30px 60px;
+   /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  width: 370px;
+  font-weight: 800;
+}
+
+.menu-icon{
+  width: 28px;
+}
+/* cos nie wiem co */
+@media (max-width: 650px) {
+.menu {
+
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  background: white;
+  top: 0;
+  transform: translateY(-100%);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  }
+.menu-open {
+   transform: translateY(0);
+
+}
+  .menu-item {
+    margin-bottom: 30px;
+
+  }
+  .header{
+    padding: 0 20px;
+  }
+  .header-content{
+    margin:  30px 0 0 0;
+  }
+  .heading{
+    font-size: 24px;
+
+  }
+  .articles {
+    flex-direction: column;
+    padding: 0 20px ;
+
+
+  }
+  .article{
+    width: 100%;
+
+  }
+  .newsletter-heading{
+    font-size: 24px;
+
+  }
+  .form {
+    max-width: 500px;
+    width: auto;
+  }
+  .midfooter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-button {
+    display: block;
+  }
+}
