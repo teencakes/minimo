@@ -1,0 +1,126 @@
+<!DOCTYPE html>   <!-- deklaracja rodzaju dokumentu -->
+<html lang="en">
+  <head> <!--info dla przegladarki -->
+    <meta charset="UTF-8"> <!--zestaw znakow -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--*wyswietlanie str na IE,Edge -->
+
+    <title>minimo</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo" href="#">
+          <img src="IMAGES/logo.png" alt="">
+        </a>
+
+        <ul class="menu ">
+          <li class="menu-item"><a class="menu-link" href="#">Lifestyle</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">Photodiary</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">Music</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">Travel</a></li>
+        </ul>
+        <button type="button" class="menu-button">
+          <span class="menu-button-item"></span>
+          <span class="menu-button-item"></span>
+        </button>
+      </nav>
+      <img class="img" src="IMAGES/hero-bg.png" alt="">
+      <div class="header-content">
+        <h1 class="heading">The perfect weekend gataway</h1>
+        <p class="text">  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="text">  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </header>
+    <!-- /HEADER -->
+<main>
+    <!-- ARTICLES -->
+    <section class="articles">
+      <article class="article">
+        <img class="img" src="IMAGES/article1.png" alt="">
+        <!-- jeśli chodzi o nagłówki to staramy się używać ich po kolei tzn po h2 jest h3, a tutaj jest przeskoczone od razu do h4. Kategoria w takim razie albo jako h3 albo po prostu jako <p> -->
+        <h4 class="article-tag">Lifestyle</h4>
+        <h2 class="heading">More than just a music festival</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... <a class="article-link" href="#">read more</a></p>
+      </article>
+
+      <article class="article">
+        <img class="img" src="IMAGES/article2.png" alt="">
+        <h4 class="article-tag">Lifestyle</h4>
+        <h2 class="heading">Life tastes better with coffee</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... <a class="article-link" href="#">read more</a></p>
+      </article>
+
+      <article class="article">
+        <img class="img" src="IMAGES/article3.png" alt="">
+        <h4 class="article-tag">Photodiary</h4>
+        <h2 class="heading">American dream</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... <a class="article-link" href="#">read more</a></p>
+      </article>
+
+      <article class="article">
+        <img class="img" src="IMAGES/article4.png" alt="">
+        <h4 class="article-tag">Photodiary</h4>
+        <h2 class="heading">A day exploring the Alps</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... <a class="article-link" href="#">read more</a></p>
+      </article>
+    </section>
+    <!-- /ARTICLES -->
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <h2 class="heading newsletter-heading">Sign up for our newsletter!</h2>
+
+      <form class="form">
+        <div class="form-group">
+        <input type="email" placeholder="Enter a valid email address" class="form-input">
+          <button type="submit">
+            <img src="IMAGES/send-icon.png" alt="">
+          </button>
+        </div>
+      </form>
+    </section>
+    <!-- /NEWSLETTER -->
+
+    <!-- ARTICLES -->
+    <section>
+      <div class="articles">
+        <article class="article">
+          <img class="img" src="IMAGES/article5.png" alt="">
+          <h4 class="article-tag">Lifestyle</h4>
+          <h2 class="heading">Top 10 songs for running</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... <a class="article-link" href="#">read more</a></p>
+        </article>
+        <article class="article">
+          <img class="img" src="IMAGES/article6.png" alt="">
+          <h4 class="article-tag">Lifestyle</h4>
+          <h2 class="heading">Cold winter days</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... <a class="article-link" href="#">read more</a></p>
+        </article>
+      </div>
+      <a class="heading load-more" href="#">Load more</a>
+    </section>
+    <!-- /ARTICLES -->
+ </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="midfooter">
+        <ul class="footer-menu">
+          <li class="menu-item"><a class="menu-link" href="#">Terms and Conditions</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">Privacy</a></li>
+        </ul>
+
+        <ul class="footer-menu">
+          <li class="menu-item"><a class="menu-link" href="#"><img class="menu-icon" alt="" src="IMAGES/facebook.svg"></a></li>
+          <li class="menu-item"><a class="menu-link" href="#"><img class="menu-icon" alt="" src="IMAGES/twitter.svg"></a></li>
+          <li class="menu-item"><a class="menu-link" href="#"><img class="menu-icon" alt="" src="IMAGES/instagram.svg"></a></li>
+        </ul>
+    </div>
+    </footer>
+
+
+  </body>
+</html>
