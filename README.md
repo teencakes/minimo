@@ -19,8 +19,9 @@
 
 
 Rzeczy do zrobienia:
- -[]do zrobienia 1
- -[]do zrobienia 2
- -[]do zrobienia 3
+ -[x] do zrobienia 1
+ -[] do zrobienia 2
+ -[] do zrobienia 3
+ 
  
  
