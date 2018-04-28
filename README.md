@@ -16,3 +16,9 @@
 
 
 ![](https://images.pexels.com/photos/867481/pexels-photo-867481.jpeg?cs=srgb&dl=background-colors-desk-867481.jpg&fm=jpg)
+
+
+Rzeczy do zrobienia:
+-[] do zrobienia 1
+-[] do zrobienia 2
+-[] do zrobienia 3
