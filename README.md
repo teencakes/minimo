@@ -19,9 +19,23 @@
 
 
 Rzeczy do zrobienia:
- -[x] do zrobienia 1
- -[] do zrobienia 2
- -[] do zrobienia 3
+ - [x] do zrobienia 1
+ - [ ] do zrobienia 2
+ - [ ] do zrobienia 3
  
- 
- 
+```html
+<header class="header">nagłówek</header>  
+```
+
+```css
+.header{
+     border: 1px solid black;
+     width: 100%;
+     }
+```
+
+*italic*
+
+**strong**
+
+~~line throung~
