@@ -12,4 +12,4 @@
 3. numer 3
 
 
-[ZOBACZ DEMO] https://teencakes.github.io/minimo/
+[ZOBACZ DEMO] (https://teencakes.github.io/minimo/)
