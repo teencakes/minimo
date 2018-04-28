@@ -10,3 +10,6 @@
 1. numer 1
 2. numer 2
 3. numer 3
+
+
+[ZOBACZ DEMO] https://teencakes.github.io/minimo/
